@@ -39,9 +39,4 @@ Follow the same teps as before. Except for the github token, select manual and i
 # Part 4: Deploy your own network
 For deployment you're going to use `spore-drive` and deploy a one-node network on an equinix I will provide you.
 
-### Network configuration
-The network configuration is located in
-
-
-
 
