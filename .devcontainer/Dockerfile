@@ -11,6 +11,12 @@ RUN apt-get update && apt-get install -y \
     glibc-source                         \
     ca-certificates
 
+RUN asudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
 # Install the gopls Go Language Server, see https://github.com/golang/tools/tree/master/gopls
 RUN go install golang.org/x/tools/gopls@latest
 

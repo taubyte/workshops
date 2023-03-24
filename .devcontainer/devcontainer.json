@@ -3,6 +3,8 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
+	"runArgs": ["--volume=/var/lib/docker", "--privileged"],
+    "postCreateCommand": ". /app/scripts/codespaces.sh",
 	"customizations": {
 		"vscode": {
 			"extensions": [
