@@ -1,0 +1,5 @@
+deployments:
+  all:
+    hosts:
+      node1: # PID here
+        node-key:  # private key here

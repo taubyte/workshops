@@ -20,4 +20,13 @@ ENV PATH="/root/.cargo/bin:${PATH}"
 RUN rustup target add wasm32-wasi
 
 # install Taubyte tools
-COPY tau tau spore-drive /bin/
+COPY tau dream spore-drive /bin/
+
+RUN echo 'eval "`tau autocomplete`"' >> /root/.bashrc
+
+RUN mkdir -p /root/.taubyte/networks/
+
+COPY  testnet /root/.taubyte/networks/testnet
+
+RUN /bin/spore-drive genkey swarm -o /root/.taubyte/networks/testnet/keys/swarm.key
+RUN /bin/spore-drive genkey domain --dir /root/.taubyte/networks/testnet/keys  --priv --pub

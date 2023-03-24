@@ -1,0 +1,5 @@
+keys:
+  labssh:
+    user: root
+    files:
+      - keys/ssh.pem

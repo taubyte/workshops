@@ -1,0 +1,16 @@
+network:
+    domain: 0.tau.quest
+swarmkey: keys/swarm.key
+domains:
+    key:
+        private:  keys/private.key
+        public:   keys/public.pem
+    generated: g.0.tau.quest
+hosts:
+    node1:
+        addr: "Server IP"
+        public_addr: "Server IP"
+        port: 22
+        key: labssh
+        lat: "25.2633"
+        long: "55.3087"

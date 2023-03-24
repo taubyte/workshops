@@ -1,0 +1,13 @@
+shapes:
+  all:
+    protocols:
+      seer:
+      tns:
+      patrick:
+      auth:
+      monkey:
+      hoarder:
+      node:
+    ports:
+      p2p: 4469
+
