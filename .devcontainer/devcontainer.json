@@ -1,0 +1,21 @@
+{
+	"name": "Taubyte WasmIO Workshop",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"rust-lang.rust-analyzer",
+				"golang.Go",
+			]
+		},
+		"forwardPorts": [
+			3000,
+			3001,
+			3002,
+			3003
+		]
+
+	}
+}
