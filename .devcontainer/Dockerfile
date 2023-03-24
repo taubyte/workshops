@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
     glibc-source                         \
     ca-certificates
 
-RUN asudo apt-get install \
+RUN apt-get install -y \
     ca-certificates \
     curl \
     gnupg \
