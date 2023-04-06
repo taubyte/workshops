@@ -1,23 +1,29 @@
 {
-	"name": "Taubyte WasmIO Workshop",
-	"build": {
-		"dockerfile": "Dockerfile"
+	"name": "Taubyte Workshop",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+	"postCreateCommand": ". post/init.sh",
+	"features": {
+		"ghcr.io/devcontainers/features/rust:1": {
+			"version": "1.68.2"
+		},
+		"ghcr.io/devcontainers/features/go:1": {
+			"version": "1.19"
+		},
+		"ghcr.io/devcontainers/features/docker-in-docker:1": {
+			"version": "latest",
+			"moby": true
+		}
 	},
-	"runArgs": ["--volume=/var/lib/docker", "--privileged"],
-	"mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
-    "postCreateCommand": ". /app/scripts/codespaces.sh",
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"rust-lang.rust-analyzer",
-				"golang.Go",
+				"golang.Go"
 			]
 		},
 		"forwardPorts": [
-			3000,
-			3001,
-			3002,
-			3003
+			1421,
+			9630
 		]
 
 	}
