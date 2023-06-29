@@ -1,6 +1,6 @@
 {
 	"name": "Taubyte Workshop",
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-20.04",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
 	"postCreateCommand": ". post/init.sh",
 	"features": {
 		"ghcr.io/devcontainers/features/rust:1": {
