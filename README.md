@@ -91,7 +91,7 @@ True -> Becomes same as IP address
 ## Setting up monkey to build
 Monkey will require docker in order to properly build jobs
 Download docker.  
-(I would avoid installing with snap as it did not work properly when I tried it)
+Refer: [Ubuntu Install Docker](https://docs.docker.com/engine/install/ubuntu/)
 
 ## Setting up DNS for seer
 We will need to free up DNS so that seer can start properly. 
@@ -100,7 +100,6 @@ We will need to free up DNS so that seer can start properly.
   a. DNS=1.1.1.1   
   b. DNSStubListener=no
 3. Run `systemctl restart systemd-resolved.service`
-4. Run `systemctl enable systemd-resolved.service`
 5. Run `ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf`
 
 ## Deploy your network
