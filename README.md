@@ -48,7 +48,8 @@ For this tutorial we are going to be using `example.com` as the network url
 4. Select swarm key option (Select Generate for the the walkthrough)
 5. Provide generated domain (best if its a subdomain of your network url, ex: `g.example.com`)
 6. Select domain validation key Option (Select Generate for the the walkthrough)
-7. Provide any validation url/regex skips
+7. Provide any validation url/regex skips   
+Any urls/regex given will skip any checks/validation and will serve them normally
 
 After creating a network running `spore-drive current` will show your network as selected
 
