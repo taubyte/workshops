@@ -95,13 +95,13 @@ Download docker.
 
 ## Setting up DNS for seer
 We will need to free up DNS so that seer can start properly. 
-1. open /etc/systemd/resolved.conf with any  text editor (nano, vim)
+1. open `/etc/systemd/resolved.conf` with any  text editor (nano, vim)
 2. Set  
   a. DNS=1.1.1.1   
   b. DNSStubListener=no
-3. Run systemctl restart systemd-resolved.service
-4. Run systemctl enable systemd-resolved.service
-5. Run ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
+3. Run `systemctl restart systemd-resolved.service`
+4. Run `systemctl enable systemd-resolved.service`
+5. Run `ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf`
 
 ## Deploy your network
 After setting up everything above it is time to deploy the network
@@ -110,7 +110,8 @@ This will deploy the shapes provided with the currently selected network using a
 
 
 ## Setting up DNS for your network
-You will need to setup dns records for your seer,generated domain, and service urls. For all these records best to have a 1 minute TTL
+You will need to setup dns records for your seer,generated domain, and service urls.   
+For all these records best to have a 1 minute TTL
 
 ### Seer
 Add an `A Record` for each host that is running seer.   
