@@ -1,45 +1,21 @@
-# Part 1: Web Console
- ## Login
-  Follow instruction in https://tau.how/docs/getting-started/login
- ## Create a project
-  Follow instruction in https://tau.how/docs/getting-started/project
- ## Create a Function
-  Follow instruction in https://tau.how/docs/getting-started/first-serverless-function
- ## Create a Website (Challenge)
-  Should be quite easy (if you followed my example)
+This is a DevContainer (Code Space) that you can spin-up from VS Code or GitHub to develop on and/or deploy a Cloud Computing Platform/Network.
 
-# Part 2: Create a project using tau
- ## Install
-   ### Using go install 
-   https://tau.how/docs/tau/go_install
-   ### from source
-   https://tau.how/docs/tau/source/manual
+# What's shipped here
+Once the space is up and running which you can easily do on Github by clicking the  Code button, then click the Codespaces tab.
 
- ## Shell Completion (Optional)
- https://tau.how/docs/tau/autocomplete
+ - Developer Tools:
+    - tau - The Taubyte command line
+    - dreamland - tools to spin up a local cloud for testing
+ - Ops Tools:
+    - spore-drive - an easy to use command-line tool that will help you build a Cloud Computing Platform in minutes.
 
 
- ## Login
- https://tau.how/docs/tau/login
-
- ## Create a project
- https://tau.how/docs/tau/project/new
+# Use Developer Tools:
+ Refer to [Documentation](https://tau.how/guides/build/02-guide/01-create-project/)
 
 
- ## Create a function
- https://tau.how/docs/tau/function/new
-
-# Part 3: Use dreamland to test changes
-For this part you will use use Github codespace
-
-### Login with tau
-Follow the same teps as before. Except for the github token, select manual and input the token. you can get from `~/tau.yaml`
-
-
-# Part 4: Deploy your own network
-For deployment you're going to use `spore-drive` and deploy a one-node network on an equinix I will provide you.
-
-For this tutorial we are going to be using `example.com` as the network url
+# Deploy your own Cloud!
+For deployment you're going to use `spore-drive`.
 
 ## Create A Network
 1. Run `spore-drive new network`   
@@ -132,7 +108,7 @@ It might take a minute or so for the dns to recognize your changes.
 Best way to check is to do a dig on your network's seer url to see if it has updated.   
 Last step is to connect to your network from web-console
 
-1. Go to [web-console](https://console.taubyte.com/login) 
+1. Go to [Web Console](https://console.taubyte.com) 
 2. Fill in email and select Custom in network selector
 3. Enter in the network-url and hit the checkmark
 4. Login
