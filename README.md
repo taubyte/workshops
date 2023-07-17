@@ -96,3 +96,18 @@ Finally, connect to your network from the web-console:
 2. Fill in your email and select 'Custom' in the network selector
 3. Enter the network-URL and hit the checkmark
 4. Login
+
+### Adding plugins
+In order to add a plugin your shape must contain the protocol `node`.   
+Will also need a plugin ready to go.
+
+1. Run `spore-drive import plugin -v "version to store under" -p "path to plugin"`
+2. Create a new shape or edit an existing one and add `node`.
+3. At the end it will prompt you to select plugins, select your plugin.   
+   List will contain plugins with all their versions as a selection so make sure you only select one for each plugin.
+4. Push your network.
+
+To add a plugin to a dreamland instance run   
+```bash
+dream inject attachPlugin -p "path to built plugin"
+```
