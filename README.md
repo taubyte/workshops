@@ -107,8 +107,7 @@ Will also need a plugin ready to go.
    List will contain plugins with all their versions as a selection so make sure you only select one for each plugin.
 4. Push your network.
 
-
 To add a plugin to a dreamland instance run   
 ```bash
-dream inject attachPlugin -p {path to built plugin}
+dream inject attachPlugin -p "path to built plugin"
 ```
